@@ -1,0 +1,28 @@
+{
+  "name": "backendc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build-sass": "sass src/sass/index.scss src/public/css/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7",
+    "method-override": "^3.0.0",
+    "socket.io": "^4.5.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "npm-check-updates": "^16.3.20",
+    "sass": "^1.56.1"
+  }
+}

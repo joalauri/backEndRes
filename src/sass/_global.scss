@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+//  i{
+//     font-family: 'Poppins';
+//  }
+*::-webkit-scrollbar {
+    display: none;
+}
+img::selection,i::selection,svg::selection{
+    background: none;
+}
+
+button,a{
+    cursor: pointer !important;
+}
+
+body{
+    background: #151515;
+}
+
+@mixin responsive($width,$properties,$values) {
+    $i : 1;
+    @media screen and (max-width:$width){
+        @each $property in $properties {
+            #{$property}:  nth($values,$i);
+            $i : ($i + 1);
+        }
+    }
+}@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+*::-webkit-scrollbar {
+    display: none !important;
+}
+img::selection,i::selection,svg::selection{
+    background: none;
+}
+
+button,a{
+    cursor: pointer !important;
+}
+
+body{
+    background: #e4e4e4;
+}
+
+@mixin responsive($width,$properties,$values) {
+    $i : 1;
+    @media screen and (max-width:$width){
+        @each $property in $properties {
+            #{$property}:  nth($values,$i);
+            $i : ($i + 1);
+        }
+    }
+}
+
+body > .container{
+    width: 100%;
+}

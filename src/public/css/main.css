@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+img::selection, i::selection, svg::selection {
+  background: none;
+}
+
+button, a {
+  cursor: pointer !important;
+}
+
+body {
+  background: #151515;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+img::selection, i::selection, svg::selection {
+  background: none;
+}
+
+button, a {
+  cursor: pointer !important;
+}
+
+body {
+  background: #e4e4e4;
+}
+
+body > .container {
+  width: 100%;
+}
+
+.chatContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatContainer > .chat {
+  width: 600px;
+  background: white;
+  height: 600px;
+  border-radius: 6px;
+  padding: 50px 50px 20px;
+}
+.chatContainer > .chat .messages {
+  width: 100%;
+  height: 92%;
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.chatContainer > .chat .messages::-webkit-scrollbar {
+  display: none;
+}
+.chatContainer > .chat .messages .messageContainer {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: flex-start;
+}
+.chatContainer > .chat .messages .messageContainer.recieved {
+  align-self: flex-start;
+}
+.chatContainer > .chat .messages .messageContainer.sent {
+  align-self: flex-end;
+}
+.chatContainer > .chat .messages .messageContainer > figure {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chatContainer > .chat .messages .messageContainer > figure img {
+  width: 33px;
+  height: 33px;
+}
+.chatContainer > .chat .messages .messageContainer > figure span {
+  font-size: 9px;
+  color: rgb(120, 120, 120);
+}
+.chatContainer > .chat .messages .messageContainer > .messageRecieved {
+  padding: 6px 16px;
+  border-radius: 20px;
+  text-align: left;
+  width: max-content;
+  color: #000000;
+  background: rgba(209, 209, 209, 0.3294117647);
+  align-self: flex-start;
+  order: 2;
+  font-size: 14px;
+  max-width: 415px;
+  overflow-wrap: break-word;
+}
+.chatContainer > .chat .messages .messageContainer > .messageSent {
+  color: #ffffff;
+  background: #3483fa;
+  padding: 6px 16px;
+  border-radius: 20px;
+  text-align: left;
+  width: max-content;
+  align-self: flex-start;
+  font-size: 14px;
+  max-width: 415px;
+  overflow-wrap: break-word;
+}
+.chatContainer > .chat .newMessage {
+  margin-top: 8px;
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.chatContainer > .chat .newMessage textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  background: rgba(209, 209, 209, 0.3294117647);
+  border-radius: 6px;
+  width: 75%;
+  height: 100%;
+  padding: 14px 5px 0 15px;
+  color: black;
+  overflow-wrap: break-word;
+  max-width: 374px;
+}
+.chatContainer > .chat .newMessage textarea:focus {
+  outline: 2px solid #3483fa;
+}
+.chatContainer > .chat .newMessage textarea:focus::placeholder {
+  color: #000000;
+}
+.chatContainer > .chat .newMessage button {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  border-radius: 6px;
+  background: #3483fa;
+  color: #ffffff;
+}
+.chatContainer > .chat .newMessage button:hover {
+  background: #1668e4;
+}
+
+/*# sourceMappingURL=main.css.map */
