@@ -1,4 +1,8 @@
 .containerCard{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-startgit s;
+    align-items: center;
     background-color: white;
     width: 250px;
     border-radius: 7px;

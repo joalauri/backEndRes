@@ -26,7 +26,9 @@ webController.getRandomProductController = async (req, res) => {
 webController.getChatController =  (req, res) =>{
 res.render("chat")
 }
-
+webController.getCreateController = async (req, res) => {
+  res.render('createObject')
+}
 
 module.exports = webController
 

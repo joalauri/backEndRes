@@ -12,6 +12,7 @@ const {
   // getProductsController,
   getRandomProductController,
   getChatController,
+  getCreateController,
 } = require("../controller/web.controller");
 
 /* Creating a route for the web server. */
@@ -19,6 +20,7 @@ router.get("/", getHomePage);
 // router.get("/products", getProductsController);
 router.get("/randomProducts", getRandomProductController);
 router.get("/chat", getChatController);
+router.get("/createObject", getCreateController)
 
 /* Creating a route for the API. */
 router.get("/api/product/:id", getProductByIdController);
