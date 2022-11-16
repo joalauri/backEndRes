@@ -282,4 +282,32 @@ body > .container {
   flex-flow: row wrap;
 }
 
+.productSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 7px;
+}
+.productSection form {
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.productSection form input {
+  border: 1px solid gray;
+}
+.productSection form textarea {
+  border: 1px solid gray;
+}
+.productSection form button {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+}
+
 /*# sourceMappingURL=main.css.map */
