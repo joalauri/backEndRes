@@ -1,1 +1,14 @@
-{{>chat}}
+
+{{>navigation}}
+    {{>chat}}
+    {{>divider}}
+        <div class="containerCards">
+        {{#each products}}
+        {{>productCard}}
+        {{/each}}
+        </div>
+    {{>divider}}
+    {{>createProduct}}
+     {{>divider}}
+
+{{>footer}}

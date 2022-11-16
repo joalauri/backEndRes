@@ -9,14 +9,16 @@ const {
 } = require("../controller/api.controller");
 const {
   getHomePage,
-  getProductsController,
+  // getProductsController,
   getRandomProductController,
+  getChatController,
 } = require("../controller/web.controller");
 
 /* Creating a route for the web server. */
 router.get("/", getHomePage);
-router.get("/products", getProductsController);
+// router.get("/products", getProductsController);
 router.get("/randomProducts", getRandomProductController);
+router.get("/chat", getChatController);
 
 /* Creating a route for the API. */
 router.get("/api/product/:id", getProductByIdController);

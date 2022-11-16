@@ -1,0 +1,28 @@
+.containerCard{
+    background-color: white;
+    width: 250px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    .cardImg{
+        padding: 15px;
+        border-bottom: 1px solid rgb(193, 193, 193);
+        img{
+            width: 200px;
+        }
+       
+    }
+    .cardInfo{
+        padding: 10px;
+        h2{
+            color: rgb(19, 19, 19);
+            padding-bottom: 10px;
+        }
+        h4{
+            color: rgb(33, 33, 33);
+            padding-bottom: 11px;
+        }
+        p{
+            color: rgb(33, 33, 33);;
+        }
+    }
+}

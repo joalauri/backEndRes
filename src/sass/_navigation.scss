@@ -1,0 +1,33 @@
+.containerNav {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  .navLinks {
+    background-color: rgb(154, 154, 154);
+    width: 100%;
+
+    ul {
+      background: $blueLigth;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 50px;
+      height: 100%;
+      li {
+        align-items: center;
+        padding: 10px;
+        border-bottom:1px solid $greyStandar;
+        a {
+          height: 100%;
+          text-decoration: none;
+          color: black;
+          padding: 10px;
+          border-radius: 7px;
+        
+        }
+      }
+    }
+  }
+}

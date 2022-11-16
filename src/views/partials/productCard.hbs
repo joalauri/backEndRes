@@ -1,0 +1,15 @@
+{{!-- {{#valid title "STIVEN"}} --}}
+    <div class="containerCard">
+        <div class="cardImg">
+            <img src={{thumbnail}} alt="">
+        </div>
+        <div class="cardInfo">
+            <h2> {{title}}</h2>
+            <h4>price: {{price}}</h4>
+            {{!-- <p>{{description || Description: esto es una pequeña descripción de lo que puede, o podría contener un porducto. Aquí vamos a dar una breve y concisa información.}}</p> --}}
+        </div>
+        <form id="deleteProductForm" class="{{id}}">
+            <button type="submit">delete</button>
+        </form>
+    </div>
+{{!-- {{/valid}} --}}

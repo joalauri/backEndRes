@@ -54,9 +54,75 @@ body > .container {
   width: 100%;
 }
 
+.containerNav {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+.containerNav .navLinks {
+  background-color: rgb(154, 154, 154);
+  width: 100%;
+}
+.containerNav .navLinks ul {
+  background: rgba(65, 137, 230, 0.15);
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+  height: 100%;
+}
+.containerNav .navLinks ul li {
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(209, 209, 209, 0.3921568627);
+}
+.containerNav .navLinks ul li a {
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.containerFooter {
+  background: rgba(65, 137, 230, 0.15);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.containerFooter .footerLinks {
+  width: 100%;
+}
+.containerFooter .footerLinks ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.containerFooter .footerLinks ul li {
+  align-items: center;
+  padding: 10px;
+}
+.containerFooter .footerLinks ul li a {
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 7px;
+}
+.containerFooter .subtitleFooter h4 {
+  font-size: small;
+}
+
 .chatContainer {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +178,7 @@ body > .container {
   text-align: left;
   width: max-content;
   color: #000000;
-  background: rgba(209, 209, 209, 0.3294117647);
+  background: rgba(209, 209, 209, 0.3921568627);
   align-self: flex-start;
   order: 2;
   font-size: 14px;
@@ -143,7 +209,7 @@ body > .container {
   resize: none;
   border: none;
   outline: none;
-  background: rgba(209, 209, 209, 0.3294117647);
+  background: rgba(209, 209, 209, 0.3921568627);
   border-radius: 6px;
   width: 75%;
   height: 100%;
@@ -172,6 +238,48 @@ body > .container {
 }
 .chatContainer > .chat .newMessage button:hover {
   background: #1668e4;
+}
+
+.containerCard {
+  background-color: white;
+  width: 250px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+.containerCard .cardImg {
+  padding: 15px;
+  border-bottom: 1px solid rgb(193, 193, 193);
+}
+.containerCard .cardImg img {
+  width: 200px;
+}
+.containerCard .cardInfo {
+  padding: 10px;
+}
+.containerCard .cardInfo h2 {
+  color: rgb(19, 19, 19);
+  padding-bottom: 10px;
+}
+.containerCard .cardInfo h4 {
+  color: rgb(33, 33, 33);
+  padding-bottom: 11px;
+}
+.containerCard .cardInfo p {
+  color: rgb(33, 33, 33);
+}
+
+.divider {
+  background-color: rgb(192, 192, 192);
+  width: 100%;
+  height: 100px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.containerCards {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 /*# sourceMappingURL=main.css.map */

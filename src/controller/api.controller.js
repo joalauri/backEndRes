@@ -42,9 +42,11 @@ apiController.addNewProduct = async (req, res) => {
     } else {
         await (await contenedor()).save(object);
         res.status(201);
-        res.send(
-            JSON.stringify(await (await contenedor()).getById(object.id), null, 2)
-        );
+        // res.send(
+        //     JSON.stringify(await (await contenedor()).getById(object.id), null, 2)
+        // );
+        // console.log(object)
+        res.redirect('/')
     }
 };
 
@@ -59,7 +61,8 @@ apiController.deleteProductById = async (req, res) => {
     } else {
         await (await contenedor()).deleteById(id);
         res.status(204);
-        res.send();
+        // console.log(id)
+        res.render('index')
     }
 };
 
