@@ -2,15 +2,14 @@ const {createPool} = require("mysql2/promise");
 const path = require("path");
 const dotenv = require("dotenv");
 
-// dotenv.config({ path: path.join("../")});
+dotenv.config({ path: path.join(".env")});
 
 const db = createPool({
-    host:"127.0.0.1",
-    port: 3307,
-    user: 'Joaquin2',
-    password: "JuanDeLosPalotes123!",
-    database: 'ecommerce_coder'
+    host:process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE,
+    ssl: {rejectUnauthorized:false}
 });
 
 module.exports = {db}
-
