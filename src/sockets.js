@@ -1,8 +1,15 @@
+const {ChatService} = require('./services/ChatService')
+
 const WebSocket = (io) => {
-  io.on("connection", (socket) => {
+  io.on("connection",async (socket) => {
     console.log("New user connected");
 
-    socket.on("messageToSend",(msg)=>{
+    const messages = await ChatService.getAll();
+
+    socket.emit("loadMessages",messages);
+    
+    socket.on("messageToSend",async (msg)=>{
+      await ChatService.addNewMessage(msg);
       socket.broadcast.emit("newMessage",msg);
     })
 

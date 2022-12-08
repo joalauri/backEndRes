@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "call script.bat && nodemon src/index.js",
+    "dev": "call nodemon src/index.js",
     "build-sass": "sass src/sass/index.scss src/public/css/main.css",
-    "watch-sass": "nodemon -e scss -x \"npm run build-sass\" "
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\" ",
+    "query": "node src/query.js"
+
   },
   "keywords": [],
   "author": "",
@@ -24,6 +26,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20",
     "npm-check-updates": "^16.3.20",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "mysql2": "^2.3.3"
   }
 }

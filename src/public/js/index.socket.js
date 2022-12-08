@@ -21,6 +21,13 @@ socket.on("newMessage", (msg) => {
     scrollDown();
 });
 
+socket.on("loadMessages",(messagesList) =>{
+    messagesList.map(msg => {
+        messages.insertAdjacentHTML("beforeend",messageRecieve(msg.message));
+        scrollDown();
+    })
+})
+
 const messageSent = (msg) => {
   return `
     <div class="messageContainer sent">

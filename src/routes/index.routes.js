@@ -2,30 +2,22 @@
 const { Router } = require("express");
 const router = Router();
 const {
+  getProducts,
+  getProductById,
+  getRandomProduct,
   addNewProduct,
   deleteProductById,
-  getProductByIdController,
-  updateProductById,
-} = require("../controller/api.controller");
-const {
-  getHomePage,
-  // getProductsController,
-  getRandomProductController,
-  getChatController,
-  getCreateController,
-} = require("../controller/web.controller");
+  updateProductById
+} = require("../controller/Product.Controller");
 
-/* Creating a route for the web server. */
+const { getHomePage } = require("../controller/Chat.Controller");
 router.get("/", getHomePage);
-// router.get("/products", getProductsController);
-router.get("/randomProducts", getRandomProductController);
-router.get("/chat", getChatController);
-router.get("/createObject", getCreateController)
 
-/* Creating a route for the API. */
-router.get("/api/product/:id", getProductByIdController);
-router.post("/api/product", addNewProduct);
-router.delete("/api/product/:id", deleteProductById);
-router.put("/api/product/:id", updateProductById);
+router.get("/api/products", getProducts);
+router.get("/api/products/:id", getProductById);
+router.get("/api/randomProduct", getRandomProduct);
+router.post("/api/products", addNewProduct);
+router.delete("/api/products/:id", deleteProductById);
+router.put("/api/products/:id", updateProductById);
 
 module.exports = { router };
